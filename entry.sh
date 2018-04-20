@@ -11,7 +11,7 @@ if [ ! -f "${monitordir}/config.php" ]; then
 fi
 
 # create config symlink
-ln -s /var/www/html/modules/config.php $monitordir/config.php
+ln -s $monitordir/config.php /var/www/html/modules/config.php
 
 # start apache
 apache2-foreground
